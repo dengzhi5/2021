@@ -1,0 +1,12 @@
+server:
+  port: 5556
+
+spring:
+  application:
+    name: cloud-zuul-dynamic-route
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes,refresh

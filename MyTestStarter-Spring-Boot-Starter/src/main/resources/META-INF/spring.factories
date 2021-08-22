@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.dz.myteststarterspringbootstarter.config.Demo1StarterConfig

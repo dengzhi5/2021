@@ -1,0 +1,23 @@
+server:
+  port: 7777
+
+spring:
+  application:
+    name: cloud-zuul-dynamic-filter
+
+zuul:
+  routes:
+    client:
+      path: /client/**
+      serviceId: cloud-eureka-client
+
+  filter:
+    # 指定动态加载的过滤器存储路径
+    root: filter
+    # 用来配置动态加载的间隔时间，以秒为单位
+    interval: 5
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password@localhost:1111/eureka/
